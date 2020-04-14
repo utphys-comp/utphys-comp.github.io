@@ -35,9 +35,9 @@
     - 初回のみ
 
         ```
-        The authenticity of host 'ssh0-01.ecc.u-tokyo.ac.jp (1.2.3.4)' can't be established.
-        ECDSA key fingerprint is SHA256:xxxxxxxx
-        Are you sure you want to continue connecting (yes/no/[fingerprint])?
+        The authenticity of host 'ssh0-01.ecc.u-tokyo.ac.jp (192.51.223.234)' can't be established.
+ECDSA key fingerprint is SHA256:3FC6xTeUAaOnpb3+o75NLLyxmWr67Orhp/Px+2LB9H4.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
         ```
        
        のような警告が表示されるが、```yes``` を入力し return キー(あるいは enter キー)を押す
@@ -69,3 +69,6 @@
 
 To be written...
 
+### 参考資料
+
+* [外部からのECCSの利用/SSHサーバ](https://www.ecc.u-tokyo.ac.jp/system/outside.html#ssh)

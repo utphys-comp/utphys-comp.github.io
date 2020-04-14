@@ -48,7 +48,7 @@
 
 * Gnuplot環境
     * ceenv (gnuplotインストール済み)
-    * [単体でのインストール](gnupoot)
+    * [単体でのインストール](gnuplot)
 
 * SSHリモートアクセス
     * [ECCSへのリモートアクセス](ssh-to-eccs) (東大限定)
