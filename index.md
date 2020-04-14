@@ -46,6 +46,10 @@
 
 * [LaTeX環境](latex)
 
+* Gnuplot環境
+    * ceenv (gnuplotインストール済み)
+    * [単体でのインストール](gnupoot)
+
 * SSHリモートアクセス
     * [ECCSへのリモートアクセス](ssh-to-eccs) (東大限定)
     * [ 知の物理学研究センターワークステーション(ai)へのSSHリモートアクセス](ssh-to-ai) (「計算機実験」限定)
