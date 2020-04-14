@@ -5,7 +5,7 @@
 以下、「仮想OS」はVirtualBox内で動いているceenv、「ホストOS」はその上でVirtualBoxが動いているWindows、macOSなどを指す
 
 1. ECCS (教育用計算機システム)にログインできるかどうかを確認 (初回のみ)
-    - ホストOSでウェブブラウザを立ち上げ、セキュアWWWサーバ https://secure.ecc.u-tokyo.ac.jp/index.html にアクセス
+    - ホストOSでウェブブラウザを立ち上げ、セキュアWWWサーバ [https://secure.ecc.u-tokyo.ac.jp/index.html](https://secure.ecc.u-tokyo.ac.jp/index.html) にアクセス
     - 「ディスク使用量の確認」を行ってみる
     - UTokyo Account のユーザID (10桁の数字)とパスワードを入力
     - 「あなたのアカウントでは， xxxx GBまでディスクを使用することができます．あなたの現在のディスク使用量は xxxx GBです．」のようなメッセージが表示されればOK
@@ -22,7 +22,7 @@
 1. ECCSにSSH公開鍵を登録 (初回のみ)
     - 仮想OS (ceenv)上で LXTerminal を開き、```cat  $HOME/.ssh/id_rsa.pub | xsel -b -i``` を実行する
     - SSH公開鍵がクリップボードにコピーされる
-   - ホストOSでウェブブラウザを立ち上げ、セキュアWWWサーバ https://secure.ecc.u-tokyo.ac.jp/index.html にアクセス
+   - ホストOSでウェブブラウザを立ち上げ、セキュアWWWサーバ [https://secure.ecc.u-tokyo.ac.jp/index.html](https://secure.ecc.u-tokyo.ac.jp/index.html) にアクセス
    - 「SSHサーバ 公開鍵アップロード」をクリック
    - UTokyo Account のユーザID (10桁の数字)とパスワードを入力
    - 「送信方法」として「テキスト貼付け」を選択
