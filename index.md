@@ -30,10 +30,10 @@
     * これがないと UTAS にも ITC-LMS にもアクセスできない
     * オンライン講義のURLも分からない
 * ECCSクラウドメール (@g.ecc.u-tokyo.ac.jp) (東大限定)
-    * 「計算機実験 Slack」や「SSH公開鍵登録フォーム」などにアクセス
+    * 「計算機実験Slack」や「SSH公開鍵登録フォーム」などにアクセス
 
 * 「計算機実験」Slack (「計算機実験」限定)
-    * 参加リンクは ITL-LMSで通知
+    * 参加リンクはITL-LMSで通知
 
 * オンライン会議システム Webex and/or Zoom (オンライン講義限定)
     *  [https://utelecon.github.io/oc/](https://utelecon.github.io/oc/) (情報が多すぎて読むのが大変)
@@ -44,15 +44,16 @@
     * インストール方法 [https://github.com/cmsi/MateriAppsLive/wiki/ceenv](https://github.com/cmsi/MateriAppsLive/wiki/ceenv)
     * [MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/) は ceenv に加えて、いろいろな物質科学シミュレーションも実行できる環境一式が揃っている (ただしサイズは少し大きい 〜2.6GB)
 
-* [LaTeX環境](latex)
+* LaTeX (計算機実験ハンドブック 第3章)
+    * [LaTeX環境の整備](latex)
 
-* Gnuplot環境
+* Gnuplot (計算機実験ハンドブック 1.4節)
     * ceenv (gnuplotインストール済み)
     * [単体でのインストール](gnuplot)
 
-* SSHリモートアクセス
+* SSHリモートアクセス (計算機実験ハンドブック 1.2節)
     * [ECCSへのリモートアクセス](ssh-to-eccs) (東大限定)
-    * [ 知の物理学研究センターワークステーション(ai)へのSSHリモートアクセス](ssh-to-ai) (「計算機実験」限定)
+    * [知の物理学研究センターワークステーション(ai)へのSSHリモートアクセス](ssh-to-ai) (「計算機実験」限定)
 
 * MATLAB あるいは Python など、インタープリタ言語の一つに慣れておくと便利
     * 電卓としての利用、図の描画、行列演算、数式処理、任意精度計算、など
