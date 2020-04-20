@@ -10,7 +10,7 @@
     - UTokyo Account のユーザID (10桁の数字)とパスワードを入力
     - 「あなたのアカウントでは， xxxx GBまでディスクを使用することができます．あなたの現在のディスク使用量は xxxx GBです．」のようなメッセージが表示されればOK
 
-1. SSH公開鍵の作成 (初回のみ)
+1. SSH鍵ペアの作成 (初回のみ)
     - 仮想OS (ceenv)上でスタートメニュー ⇒ System Tools ⇒ LXTerminal を開く
     - コマンドラインから ```ssh-keygen -t rsa``` を実行する
     - ```Enter file in which to save the key (/***/.ssh/id\_rsa):``` と訊かれるが、何も入力せずに単に return キー(あるいは enter キー)を押す
@@ -41,6 +41,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
         ```
        
        のような警告が表示されるが、```yes``` を入力し return キー(あるいは enter キー)を押す
+    - ```Enter passphrase for key '/home/user/.ssh/id_rsa':``` と訊かれるので、SSH鍵ペアの作成時に設定したパスフレーズを入力する
     - ```ssh0-01m:~ 1234567890$``` のようなコマンドプロンプトが表示されたら、リモートログイン成功
     - ログアウトするには ```exit``` を実行する
 
@@ -49,7 +50,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 1. ECCS (教育用計算機システム)にログインできるかどうかを確認 (初回のみ)
     - ceenvの場合と同じ
 
-1. SSH公開鍵の作成 (初回のみ)
+1. SSH鍵ペアの作成 (初回のみ)
     - macOS上で「ターミナル」を開く
     - コマンドラインから ```ssh-keygen -t rsa``` を実行する
     - 以下、ceenvの場合と同じ
