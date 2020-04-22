@@ -65,6 +65,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
     - macOS上で「ターミナル」を開く
     - コマンドラインから ```ssh 1234567890@ssh0-01.ecc.u-tokyo.ac.jp``` を実行(```1234567890``` の部分は自分の共通IDに置き換える)
     - 以下、ceenvの場合と同じ
+    - パスフレーズを入力する際に「パスワードをキーチェーンに保存」にチェックを入れておくと、次回以降パスワードなしでSSHログインできるようになる
 
 ### WindowsからECCSへのSSHアクセス
 

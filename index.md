@@ -3,7 +3,7 @@
 
 ## 必要な環境
 
-* 「[計算機実験ハンドブック](https://github.com/utphys-comp/handbook/releases)」に書いてあることが、自宅のPCでも一通り試せるような環境を準備する
+* 「[計算機実験ハンドブック](https://github.com/utphys-comp/handbook/releases)」に書いてあることが、自宅のPCから一通り試せるような環境を準備する
     * プログラミング (オフライン・リモート利用)
         * エディタ、コンパイラ(C, C++, Fortran, BLAS/LAPACK, MPI/OpenMP)
     * 計算結果のプロット (オフライン利用)

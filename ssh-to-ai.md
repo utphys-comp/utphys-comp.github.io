@@ -21,7 +21,8 @@
 
 1. aiにSSHログイン
 
-    To be written..
+    - 大学外部からaiに直接ログインすることはできないので、いったんECCSにSSHログインする。その際に ```-A``` オプションをつける: ```ssh -A 1234567890@ssh0-01.ecc.u-tokyo.ac.jp``` を実行(```1234567890``` の部分は自分の共通IDに置き換える)
+    - ECCSからaiにSSHログインする: ```ssh ce05201500@ai.phys.s.u-tokyo.ac.jp``` を実行(```ce05201500``` の部分は自分のaiのアカウント名(講義時に通知)に置き換える)
 
 ### macOSからECCSへのSSHアクセス
 
@@ -38,7 +39,7 @@
 
 1. aiにSSHログイン
 
-    To be written..
+    以下、ceenvの場合と同じ
 
 ### WindowsからECCSへのSSHアクセス
 
