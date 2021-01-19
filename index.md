@@ -22,6 +22,8 @@
     * 自分で環境を用意できるのであれば、基本何を使ってもよい
     * しかし、個別の環境をサポートすることは不可能。問題が生じた時は、まず推奨環境で試した上で質問
     * サポートする側とされる側で同じ環境が揃っていることが重要
+* 上記のceenv以外にもWSL2 (Windows 10の場合)やHomebrew (macOSの場合)などを使って、必要な環境を揃えることが可能である
+    * [WSL2の導入](wsl) [西村俊祐氏(物理学科2020年進学)による]
 * 上記に加えて、オンライン授業・実習を効果的に行うために、Webex/Zoom, ITC-LMS, Slackなどを活用する
 
 ## 準備
@@ -44,11 +46,16 @@
     * インストール方法 [https://github.com/cmsi/MateriAppsLive/wiki/ceenv](https://github.com/cmsi/MateriAppsLive/wiki/ceenv)
     * [MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/) は ceenv に加えて、いろいろな物質科学シミュレーションも実行できる環境一式が揃っている (ただしサイズは少し大きい 〜2.6GB)
 
+* (あるいはceenvの代わりに) Ubuntu (WSL2)
+
+    * [WSL2の導入](wsl) [西村俊祐氏(物理学科2020年進学)による]
+
 * LaTeX (計算機実験ハンドブック 第3章)
     * [LaTeX環境の整備](latex)
 
 * Gnuplot (計算機実験ハンドブック 1.4節)
     * ceenv (gnuplotインストール済み)
+    * Ubuntu (WSL2) (```sudo apt install gnuplot```でインストールできる)
     * [単体でのインストール](gnuplot)
 
 * SSHリモートアクセス (計算機実験ハンドブック 1.2節)

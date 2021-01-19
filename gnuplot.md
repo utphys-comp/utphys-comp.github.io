@@ -22,11 +22,11 @@
     * gnuplot-5.2.3-quartz.pkg をダウンロードして開く
     * 指示にしたがってインストールを進める
 
-## Ubuntu (WSL 2)
+## Ubuntu (WSL2)
 
 * インストール
     * 以下のコマンドを入力し、aptを使ってインストールする
 
 ```bash
-sudo apt-get install gnuplot
+sudo apt install gnuplot
 ```
