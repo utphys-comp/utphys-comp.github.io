@@ -5,10 +5,9 @@
 以下、「仮想OS」はVirtualBox内で動いているceenv、「ホストOS」はその上でVirtualBoxが動いているWindows、macOSなどを指す
 
 1. ECCS (教育用計算機システム)にログインできるかどうかを確認 (初回のみ)
-    - ホストOSでウェブブラウザを立ち上げ、セキュアWWWサーバ [https://secure.ecc.u-tokyo.ac.jp/index.html](https://secure.ecc.u-tokyo.ac.jp/index.html) にアクセス
-    - 「ディスク使用量の確認」を行ってみる
+    - ホストOSでウェブブラウザを立ち上げ、ECCSポータル [https://portal.ecc.u-tokyo.ac.jp/](https://portal.ecc.u-tokyo.ac.jp/) にアクセス
     - UTokyo Account のユーザID (10桁の数字)とパスワードを入力
-    - 「あなたのアカウントでは， xxxx GBまでディスクを使用することができます．あなたの現在のディスク使用量は xxxx GBです．」のようなメッセージが表示されればOK
+    - ログインできればOK
 
 1. SSH鍵ペアの作成 (初回のみ)
     - 仮想OS (ceenv)上でスタートメニュー ⇒ System Tools ⇒ LXTerminal を開く
@@ -22,27 +21,26 @@
 1. ECCSにSSH公開鍵を登録 (初回のみ)
     - 仮想OS (ceenv)上で LXTerminal を開き、```cat  $HOME/.ssh/id_rsa.pub | xsel -b -i``` を実行する
     - SSH公開鍵がクリップボードにコピーされる
-   - ホストOSでウェブブラウザを立ち上げ、セキュアWWWサーバ [https://secure.ecc.u-tokyo.ac.jp/index.html](https://secure.ecc.u-tokyo.ac.jp/index.html) にアクセス
-   - 「SSHサーバ 公開鍵アップロード」をクリック
-   - UTokyo Account のユーザID (10桁の数字)とパスワードを入力
+   - ホストOSでウェブブラウザを立ち上げ、ECCSポータル [https://portal.ecc.u-tokyo.ac.jp/](https://portal.ecc.u-tokyo.ac.jp/) にアクセス・ログイン
+   - 「SSHサーバ公開鍵アップロード」をクリック
    - 「送信方法」として「テキスト貼付け」を選択
    - 「テキスト」フィールドが表示されるので、枠内にクリップボード上のSSH公開鍵をペースト(右クリック ⇒「貼付け」等)
    - 「送信」をクリック
 
 1. ECCSにSSHログイン
     - 仮想OS (ceenv)上で LXTerminal を開く
-    - コマンドラインから ```ssh 1234567890@ssh0-01.ecc.u-tokyo.ac.jp``` を実行(```1234567890``` の部分は自分の共通IDに置き換える)
+    - コマンドラインから ```ssh 1234567890@ssh01.ecc.u-tokyo.ac.jp``` を実行(```1234567890``` の部分は自分の共通IDに置き換える)
     - 初回のみ
 
         ```
-        The authenticity of host 'ssh0-01.ecc.u-tokyo.ac.jp (192.51.223.234)' can't be established.
-ECDSA key fingerprint is SHA256:3FC6xTeUAaOnpb3+o75NLLyxmWr67Orhp/Px+2LB9H4.
+        The authenticity of host 'ssh01.ecc.u-tokyo.ac.jp (192.51.223.226)' can't be established.
+ECDSA key fingerprint is SHA256:4fUNtKacYcAKwPoQ9Npm3+1NNRNMLnajvSQUKiGUJ74.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
         ```
        
        のような警告が表示されるが、```yes``` を入力し return キー(あるいは enter キー)を押す
     - ```Enter passphrase for key '/home/user/.ssh/id_rsa':``` と訊かれるので、SSH鍵ペアの作成時に設定したパスフレーズを入力する
-    - ```ssh0-01m:~ 1234567890$``` のようなコマンドプロンプトが表示されたら、リモートログイン成功
+    - ```ssh01:~ 1234567890$``` のようなコマンドプロンプトが表示されたら、リモートログイン成功
     - ログアウトするには ```exit``` を実行する
 
 ### macOSからECCSへのSSHアクセス
@@ -63,13 +61,13 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 1. ECCSにSSHログイン
     - macOS上で「ターミナル」を開く
-    - コマンドラインから ```ssh 1234567890@ssh0-01.ecc.u-tokyo.ac.jp``` を実行(```1234567890``` の部分は自分の共通IDに置き換える)
+    - コマンドラインから ```ssh 1234567890@ssh01.ecc.u-tokyo.ac.jp``` を実行(```1234567890``` の部分は自分の共通IDに置き換える)
     - 以下、ceenvの場合と同じ
     - パスフレーズを入力する際に「パスワードをキーチェーンに保存」にチェックを入れておくと、次回以降パスワードなしでSSHログインできるようになる
 
-### WindowsからECCSへのSSHアクセス
+### Windows (Ubuntu WSL2)からECCSへのSSHアクセス
 
-To be written...
+ceenvの場合と同じ
 
 ### 参考資料
 
