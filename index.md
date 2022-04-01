@@ -3,7 +3,7 @@
 
 ## 必要な環境
 
-* 「[計算機実験ハンドブック](https://github.com/utphys-comp/handbook/releases)」に書いてあることが、自宅のPCから一通り試せるような環境を準備する
+* 「[計算機実験ハンドブック](https://github.com/utphys-comp/handbook/releases)」に書いてあることが、自分のPC上で一通り試せるような環境を準備する
     * プログラミング (オフライン・リモート利用)
         * エディタ、コンパイラ(C, C++, Fortran, BLAS/LAPACK, MPI/OpenMP)
     * 計算結果のプロット (オフライン利用)
@@ -23,17 +23,15 @@
     * しかし、個別の環境をサポートすることは不可能。問題が生じた時は、まず推奨環境で試した上で質問
     * サポートする側とされる側で同じ環境が揃っていることが重要
 * 上記のceenv以外にもWSL2 (Windows 10の場合)やHomebrew (macOSの場合)などを使って、必要な環境を揃えることが可能である
-    * [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
+    * Windows: [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
+    * macOS: Homebrewによる環境構築 (準備中)
 * 上記に加えて、オンライン授業・実習を効果的に行うために、Webex/Zoom, ITC-LMS, Slackなどを活用する
 
 ## 準備
 
 * UTokyo Account (東大限定)
     * これがないと UTAS にも ITC-LMS にもアクセスできない
-    * オンライン講義のURLも分からない
 * ECCSクラウドメール (@g.ecc.u-tokyo.ac.jp) (東大限定)
-    * 「計算機実験Slack」や「SSH公開鍵登録フォーム」などにアクセス
-
 * 「計算機実験」Slack (「計算機実験」限定)
     * 参加リンクはITL-LMSで通知
 
@@ -45,6 +43,7 @@
     * ダウンロードサイズは1.5GB程度
     * インストール方法 [https://github.com/cmsi/MateriAppsLive/wiki/ceenv](https://github.com/cmsi/MateriAppsLive/wiki/ceenv)
     * [MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/) は ceenv に加えて、いろいろな物質科学シミュレーションも実行できる環境一式が揃っている (ただしサイズは少し大きい 〜2.6GB)
+    * 注: Apple Silicon (M1)では現状動作しない
 
 * (あるいはceenvの代わりに) Ubuntu (WSL2)
     * [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
