@@ -13,7 +13,7 @@
     * ネットワークの利用 (ECCSなどの大学の計算機にリモートアクセスできる環境)
 	  * ターミナル、SSH
     * インタプリタ環境 (オフライン・クラウド利用)
-	  * MATLAB、Python 2/3
+	  * MATLAB、Python
     * 他の講義や実験で必要な計算機環境の整備についても、できるだけサポート
 
 ## 推奨環境
@@ -22,10 +22,11 @@
     * 自分で環境を用意できるのであれば、基本何を使ってもよい
     * しかし、個別の環境をサポートすることは不可能。問題が生じた時は、まず推奨環境で試した上で質問
     * サポートする側とされる側で同じ環境が揃っていることが重要
-* 上記のceenv以外にもWSL2 (Windows 10の場合)やHomebrew (macOSの場合)などを使って、必要な環境を揃えることが可能である
+    * 注: Apple Silicon (M1)では現状動作しない
+* 上記のceenv以外にもWSL2 (Windowsの場合)やHomebrew (macOSの場合)などを使って、必要な環境を揃えることが可能である
     * Windows: [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
-    * macOS: Homebrewによる環境構築 (準備中)
-* 上記に加えて、オンライン授業・実習を効果的に行うために、Webex/Zoom, ITC-LMS, Slackなどを活用する
+    * macOS: [Homebrewによる環境構築](homebrew)
+* 上記に加えて、オンライン授業・実習を効果的に行うために、ITC-LMS, Slackなどを活用する
 
 ## 準備
 
@@ -35,9 +36,6 @@
 * 「計算機実験」Slack (「計算機実験」限定)
     * 参加リンクはITL-LMSで通知
 
-* オンライン会議システム Webex and/or Zoom (オンライン講義限定)
-    *  [https://utelecon.github.io/oc/](https://utelecon.github.io/oc/) (情報が多すぎて読むのが大変)
-
 * ceenv (Computer Experiment Environment)
     * VirtualBox仮想環境。UNIX全般、C, C++, Fortran, Python, 並列化プログラミング環境がこれ一つで揃う
     * ダウンロードサイズは1.5GB程度
@@ -45,15 +43,16 @@
     * [MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/) は ceenv に加えて、いろいろな物質科学シミュレーションも実行できる環境一式が揃っている (ただしサイズは少し大きい 〜2.6GB)
     * 注: Apple Silicon (M1)では現状動作しない
 
-* (あるいはceenvの代わりに) Ubuntu (WSL2)
-    * [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
-
+* (あるいはceenvの代わりに) WSL2 (Windowsの場合)やHomebrew (macOSの場合)などを利用
+    * Windows: [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
+    * macOS: [Homebrewによる環境構築](homebrew)
 * LaTeX (計算機実験ハンドブック 第3章)
     * [LaTeX環境の整備](latex)
 
 * Gnuplot (計算機実験ハンドブック 1.4節)
     * ceenv (gnuplotインストール済み)
     * Ubuntu (WSL2) (```sudo apt install gnuplot```でインストールできる)
+    * Homebrew (macOS) (```brew install gnuplot```でインストールできる)
     * [単体でのインストール](gnuplot)
 
 * SSHリモートアクセス (計算機実験ハンドブック 1.2節)
