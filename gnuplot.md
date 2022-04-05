@@ -15,17 +15,17 @@
 
     * TeX Liveのインストール時に同時にインストールされるPS_Viewというプレビューワーを使えば、ポストスクリプトファイルを表示することができる
 
-## macOS
+## macOS (Homebrew)
 
 * インストール
-    * ブラウザで [http://ricardo.ecn.wfu.edu/pub/gnuplot/](http://ricardo.ecn.wfu.edu/pub/gnuplot/) を開く
-    * gnuplot-5.2.3-quartz.pkg をダウンロードして開く
-    * 指示にしたがってインストールを進める
+
+```
+brew install gnuplot
+```
 
 ## Ubuntu (WSL2)
 
 * インストール
-    * 以下のコマンドを入力し、aptを使ってインストールする
 
 ```bash
 sudo apt install gnuplot
