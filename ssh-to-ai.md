@@ -24,7 +24,7 @@
     - 大学外部からaiに直接ログインすることはできないので、いったんECCSにSSHログインする。その際にはSSH Agent Forwardingという機能を使うことで、仮想OS (ceenv)の秘密鍵を使ってECCSからaiへのログインも可能となる
     - 仮想OS (ceenv)上で LXTerminal を開き、```ssh-add```コマンドを実行して、Forward Agentに鍵を登録する。その際、SSH鍵ペアのパスフレーズを訊かれるので入力する
     - いったんECCSにSSHログインする。その際に ```-A``` オプションをつけてForwardingを有効にする: ```ssh -A 1234567890@ssh01.ecc.u-tokyo.ac.jp``` を実行(```1234567890``` の部分は自分の共通IDに置き換える)
-    - ECCSからaiにSSHログインする: ```ssh ce05201500@ai.phys.s.u-tokyo.ac.jp``` を実行(```ce05201500``` の部分は自分のaiのアカウント名(講義時に通知)に置き換える)
+    - ECCSからaiにSSHログインする: ```ssh u 1234567890@ai.phys.s.u-tokyo.ac.jp``` を実行(```u1234567890 ``` の部分は自分のaiのアカウント名(講義時に通知)に置き換える)
 
 ### macOSからECCSへのSSHアクセス
 
@@ -39,9 +39,7 @@
 
 1. 管理者がSSH公開鍵を登録作業を完了するまで待つ
 
-1. aiにSSHログイン
-
-    以下、ceenvの場合と同じ。ただし、macOSでは```ssh-add``は自動に実行されているので、明示的に行う必要はない
+    以下、ceenvの場合と同じ
 
 ### Windows (Ubuntu WSL2)からECCSへのSSHアクセス
 
