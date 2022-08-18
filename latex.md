@@ -13,7 +13,17 @@
      1. 「New Project」→「Blank Project」を選択し、適当な名前(例: 計算機実験Iレポート1)を入力して「Create」
      1. 日本語の文章を作成する場合に必要な準備
         - 左上のファイルアイコンをクリックして、「New File」を選択、「File Name」に「latexmkrc」を指定して「Create」
-        - 左のファイル一覧にlatexmkrcが現れるので選択し、以下の通り入力する
+        - (uplatexを使う場合) 左のファイル一覧にlatexmkrcが現れるので選択し、以下の通り入力する
+
+          ```
+          $latex = 'uplatex';
+          $bibtex = 'upbibtex';
+          $dvipdf = 'dvipdfmx %O -o %D %S';
+          $makeindex = 'mendex %O -o %D %S';
+          $pdf_mode = 3;
+          ```
+
+        - (platexを使う場合) 左のファイル一覧にlatexmkrcが現れるので選択し、以下の通り入力する
 
           ```
           $latex = 'platex';
