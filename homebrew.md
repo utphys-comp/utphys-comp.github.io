@@ -16,7 +16,7 @@
 
 ### パスの追加
 
-Apple Silicon (M1)では以下を実行する必要がある
+Apple Silicon (M1/M2/M3)では以下を実行する必要がある
 
 ```bash
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
@@ -24,7 +24,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 
 ### Homebrewの動作確認
 
-一旦、ターミナルを閉じ、新しいターミナルを開く。以下を実行してバージョン番号(3.4.5など)が表示されることを確認する
+一旦、ターミナルを閉じ、新しいターミナルを開く。以下を実行してバージョン番号(4.2.15など)が表示されることを確認する
 
 ```
 brew --version
@@ -38,10 +38,10 @@ brew --version
 brew install gcc
 ```
 
-GCCの最新版が、gcc-11 (Cコンパイラ)、g++-11 (C++コンパイラ)という名前でインストールされる
+GCCの最新版が、gcc-13 (Cコンパイラ)、g++-13 (C++コンパイラ)という名前でインストールされる
 
 ```bash
-gcc-11 --version
+gcc-13 --version
 ```
 
 ### BLAS と LAPACK

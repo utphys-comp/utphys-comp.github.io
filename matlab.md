@@ -26,8 +26,8 @@
 
 * MATLAB (デスクトップ版、Online、Mobile)、MATLAB Driveの利用に必要
 * UTokyo MATLAB Campus-Wide Licenseのページへ進む
-[https://www.u-tokyo.ac.jp/adm/dics/ja/matlabcwl.html](https://www.u-tokyo.ac.jp/adm/dics/ja/matlabcwl.html)
-* 「MATLABポータルサイト/MATLAB portal site」をクリック
+[https://utelecon.adm.u-tokyo.ac.jp/](https://utelecon.adm.u-tokyo.ac.jp/)
+* 「東京大学の包括ライセンスページ」をクリック
 * 「サインインして使い始める」をクリック
 * UTokyo Accountを要求されるので、入力
 * 「Create a MathWorks Account」をクリック
@@ -37,12 +37,12 @@
 
 ## MATLAB (デスクトップ版)のインストール
 
-* 2023年3月に最新版R2023aがリリースされている
+* 2024年3月に最新版R2024aがリリースされている
 * 作成したMATLABアカウントをつかって、前述のページにログイン
-* 「R2023a」をクリックしてダウンロード・インストール
+* 「R2024a」をクリックしてダウンロード・インストール
+    * 「Java Runtimeが必要」と表示される場合はダウンロード・インストール
     * MATLAB本体と次のToolboxを選択: Curve Fitting, Econometric, Optimization, Statistics and Machine Learning, Symbolic Math
-* **注: MATLAB本体と必要なパッケージをインストールすると合計で数GB以上になります。モバイルデータ通信ではパケット代が高額になってしまう恐れがありますのでやめておきましょう**
-    * 以前のバージョン(R2022a等)がすでにインストールされている場合はしばらくはそちらを使う。あるいは、WiFi環境が使える機会にインストール
+* **注: MATLAB本体と必要なパッケージをインストールすると合計で数GBになる。モバイルデータ通信ではパケット代が高額になってしまう恐れがありますのでやめておくこと**
 
 ## MATLAB Mobileのインストール
 
