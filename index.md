@@ -33,15 +33,15 @@
 * 上記のceenv以外にもWSL2 (Windowsの場合)やHomebrew (macOSの場合)などを使って、必要な環境を揃えることが可能である
     * Windows: [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
     * macOS: [Homebrewによる環境構築](homebrew)
-* 上記に加えて、オンライン授業・実習を効果的に行うために、ITC-LMS, Slackなどを活用する
+* 上記に加えて、オンライン授業・実習を効果的に行うために、UTOL, Slackなどを活用する
 
 ## 準備
 
 * UTokyo Account (東大限定)
-    * これがないと UTAS にも ITC-LMS にもアクセスできない
+    * これがないと UTAS にも UTOL にもアクセスできない
 * ECCSクラウドメール (@g.ecc.u-tokyo.ac.jp) (東大限定)
 * 「計算機実験」Slack (「計算機実験」限定)
-    * 参加リンクはITL-LMSで通知
+    * 参加方法は UTOL で通知
 
 * ceenv (Computer Experiment Environment) (VirtualBox版)
     * VirtualBox仮想環境。UNIX全般、C, C++, Fortran, Python, 並列化プログラミング環境がこれ一つで揃う
