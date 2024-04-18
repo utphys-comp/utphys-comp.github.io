@@ -59,7 +59,7 @@ brew install gnuplot
 
 ## SSH の方法
 
-ceenvの場合と同様の操作でSSH接続が出来る。ceenvで用いる"LXTerminal"をmacOSのターミナルであると思って操作をすればよい。詳しくは[ECCSへのリモートアクセス](ssh_to_eccs)を参照されたい。
+ceenvの場合と同様の操作でSSH接続が出来る。ceenvで用いる"LXTerminal"をmacOSのターミナルであると思って操作をすればよい。詳しくは[ECCSへのリモートアクセス](https://utphys-comp.github.io/ssh-to-eccs)を参照されたい。
 
 ## テキストエディター
 
