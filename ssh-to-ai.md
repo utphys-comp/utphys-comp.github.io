@@ -21,7 +21,7 @@
     - いったんECCSにSSHログインする。その際に ```-A``` オプションをつけてForwardingを有効にする: ```ssh -A 1234567890@ssh01.ecc.u-tokyo.ac.jp``` を実行(```1234567890``` の部分は自分の共通IDに置き換える)
     - ECCSからaiにSSHログインする: ```ssh u1234567890@ai.phys.s.u-tokyo.ac.jp``` を実行(```u1234567890 ``` の部分は自分のaiのアカウント名(講義時に通知)に置き換える)
 
-### macOSからECCSへのSSHアクセス
+### macOSからaiへのSSHアクセス
 
 1. ECCSへのSSHアクセスができるように設定を行う (初回のみ)
     - [ssh-to-ecc](ssh-to-eccs) 参照
@@ -36,7 +36,6 @@
 
     以下、ceenvの場合と同じ
 
-### Windows (Ubuntu WSL2)からECCSへのSSHアクセス
+### Windows (Ubuntu WSL2)からaiへのSSHアクセス
 
-ceenvの場合と同じ
-
+ceenvの場合とほぼ同じであるが、```ssh-add```コマンドを実行する前に、 ```eval `ssh-agent` ```コマンドを実行しておく必要がある。(参考: https://qiita.com/sshojiro/items/60982f06c1a0ba88c160)
