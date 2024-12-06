@@ -16,7 +16,7 @@
     - ```Enter passphrase (empty for no passphrase):``` と訊かれるのでパスフレーズを入力し return キー(あるいは enter キー)を押す
     - ```Enter same passphrase again:``` と訊かれるので、上と同じパスフレーズを入力し return キー(あるいは enter キー)を押す
     - ここで入力する「パスフレーズ」は、UTokyo Accountなどの「パスワード」とは別のものである。「パスフレーズ」は自分で決める文字列であり、他のサービスに用いる「パスワード」とは異なるものにすべきである。また、設定した「パスフレーズ」は忘れずに覚えておくこと
-    - 秘密鍵が ```$HOME/.ssh/id_rsa``` に、公開鍵が ```$HOME/.ssh/id_rsa.pub``` に作成される(コマンドラインから ```ls -l $HOME``` を実行してみよ)
+    - 秘密鍵が ```$HOME/.ssh/id_rsa``` に、公開鍵が ```$HOME/.ssh/id_rsa.pub``` に作成される(コマンドラインから ```ls -a $HOME``` を実行して、```.ssh```というディレクトリが作成されていることを確認してみよ)
 
 1. ECCSにSSH公開鍵を登録 (初回のみ)
     - 仮想OS (ceenv)上で LXTerminal を開き、```cat  $HOME/.ssh/id_rsa.pub | xsel -b -i``` を実行する
