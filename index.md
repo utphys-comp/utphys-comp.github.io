@@ -25,11 +25,9 @@
 サポートする側とされる側で同じ環境が揃っていることが重要
 
 * ceenv (VirtualBox版) + Overleaf
-    * Mac (Intel), Windowsで動作
-    * 注: Apple Silicon (M1/M2)では現状動作しない
+    * Mac, Windowsで動作
 * ceenv (Docker版) + Overleaf
-    * Mac (Intel/Apple Silicon)で動作
-    * 原理的にはWindowsでも動作するはずだが、スクリプト未整理
+    * Mac, Windows (WSL2)で動作
 * 上記のceenv以外にもWSL2 (Windowsの場合)やHomebrew (macOSの場合)などを使って、必要な環境を揃えることが可能である
     * Windows: [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
     * macOS: [Homebrewによる環境構築](homebrew)
@@ -48,13 +46,11 @@
     * ダウンロードサイズは1.5GB程度
     * インストール方法 [https://github.com/cmsi/MateriAppsLive/wiki/ceenv](https://github.com/cmsi/MateriAppsLive/wiki/ceenv)
     * [MateriApps LIVE!](https://cmsi.github.io/MateriAppsLive/) (VirtualBox版)は ceenv に加えて、いろいろな物質科学シミュレーションも実行できる環境一式が揃っている (ただしサイズは少し大きい 〜2.6GB)
-    * 注: Apple Silicon (M1/M2)では現状動作しない
 
 * ceenv (Computer Experiment Environment) (Docker版)
     * Docker Image。UNIX全般、C, C++, Fortran, Python, 並列化プログラミング環境がこれ一つで揃う
     * インストール方法 [https://github.com/cmsi/MateriAppsLive/wiki/ceenv-docker](https://github.com/cmsi/MateriAppsLive/wiki/ceenv-docker)
-    * Mac (Intel/Apple Silicon)で動作
-    * 原理的にはWindowsでも動作するはずだが、スクリプト未整理
+    * Apple Silicon/IntelのいずれのMacでも動作する。Windows 11上のWSL2 (Windows Subsystem for Linux 2)でも動作する。
 
 * (あるいはceenvの代わりに) WSL2 (Windowsの場合)やHomebrew (macOSの場合)などを利用
     * Windows: [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
