@@ -16,7 +16,7 @@
 
 ### パスの追加
 
-Apple Silicon (M1/M2/M3)では以下を実行する必要がある
+Apple Siliconでは以下を実行する必要がある
 
 ```bash
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile

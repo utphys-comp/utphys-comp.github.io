@@ -37,12 +37,10 @@
 
 ## MATLAB (デスクトップ版)のインストール
 
-* 2024年3月に最新版R2024aがリリースされている
-* 作成したMATLABアカウントをつかって、前述のページにログイン
-* 「R2024a」をクリックしてダウンロード・インストール
+* 作成したMATLABアカウントをつかって、 https://jp.mathworks.com/downloads/web_downloads/ にログイン
+* 「Windows用」「macOS (Intel processor)用」「macOS (Apple silicon用)」のいずれかを選択しダウンロード、インストール
     * 「Java Runtimeが必要」と表示される場合はダウンロード・インストール
     * MATLAB本体と次のToolboxを選択: Curve Fitting, Econometric, Optimization, Statistics and Machine Learning, Symbolic Math
-* **注: MATLAB本体と必要なパッケージをインストールすると合計で数GBになる。モバイルデータ通信ではパケット代が高額になってしまう恐れがありますのでやめておくこと**
 
 ## MATLAB Mobileのインストール
 

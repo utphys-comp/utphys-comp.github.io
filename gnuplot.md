@@ -7,8 +7,8 @@
 ## Windows
 
 * インストール
-    * ブラウザで [https://sourceforge.net/projects/gnuplot/files/gnuplot/5.4.8/](https://sourceforge.net/projects/gnuplot/files/gnuplot/5.4.8/) を開く
-    * gp548-win64-mingw.exe をダウンロードして開く
+    * ブラウザで [https://sourceforge.net/projects/gnuplot/files/gnuplot/6.0.2/](https://sourceforge.net/projects/gnuplot/files/gnuplot/6.0.2/) を開く
+    * gp602-win64-mingw.exe をダウンロードして開く
     * 指示にしたがってインストールを進める
 
 * gnuplot で作成したポストスクリプトファイルを見るには？
