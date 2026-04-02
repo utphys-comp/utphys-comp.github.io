@@ -173,9 +173,6 @@ BLASは様々な提供元がある。BLASについては様々な提供元があ
 ```bash
 sudo apt install libopenblas-base
 sudo apt install libopenblas-dev
-```
-
-```bash
 sudo apt install liblapack-dev liblapack-doc
 ```
 
@@ -215,7 +212,7 @@ sudo apt install gnuplot
 ## SSH の方法
 
 ceenvの場合と同様の操作でSSH接続が出来る。ceenvで用いる"LXTerminal"をUbuntuターミナルであると思って操作をすればよい。
-詳しくは[ECCSへのリモートアクセス](ssh_to_eccs)を参照されたい。
+大学外から接続する場合は先にUTokyo VPNへ接続する。詳しくは[aiへのリモートアクセス](ssh-to-ai)を参照されたい。
 
 ## テキストエディター
 

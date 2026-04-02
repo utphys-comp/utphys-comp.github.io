@@ -10,11 +10,10 @@
         * gnuplot (python/matplotlib, MATLAB でも可)
     * 文書(レポート、論文)の作成 (オフライン・クラウド利用)
         * LaTeX (TeX Live あるいは Overleaf)
-    * ネットワークの利用 (ECCSなどの大学の計算機にリモートアクセスできる環境)
+    * ネットワークの利用 (大学の計算機にリモートアクセスできる環境)
 	  * ターミナル、SSH
     * インタプリタ環境 (オフライン・クラウド利用)
 	  * MATLAB、Python
-    * 他の講義や実験で必要な計算機環境の整備についても、できるだけサポート
 
 ## 推奨環境
 
@@ -50,7 +49,6 @@
 * ceenv (Computer Experiment Environment) (Docker版)
     * Docker Image。UNIX全般、C, C++, Fortran, Python, 並列化プログラミング環境がこれ一つで揃う
     * インストール方法 [https://github.com/cmsi/MateriAppsLive/wiki/ceenv-docker](https://github.com/cmsi/MateriAppsLive/wiki/ceenv-docker)
-    * Apple Silicon/IntelのいずれのMacでも動作する。Windows 11上のWSL2 (Windows Subsystem for Linux 2)でも動作する。
 
 * (あるいはceenvの代わりに) WSL2 (Windowsの場合)やHomebrew (macOSの場合)などを利用
     * Windows: [WSL2の導入](wsl2) [西村俊祐氏(物理学科2020年進学)による]
@@ -65,7 +63,6 @@
     * [単体でのインストール](gnuplot)
 
 * SSHリモートアクセス (計算機実験ハンドブック 1.2節)
-    * [ECCSへのリモートアクセス](ssh-to-eccs) (東大限定)
     * [知の物理学研究センターワークステーション(ai)へのSSHリモートアクセス](ssh-to-ai) (「計算機実験」限定)
 
 * MATLAB あるいは Python など、インタープリタ言語の一つに慣れておくと便利

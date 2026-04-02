@@ -24,7 +24,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 
 ### Homebrewの動作確認
 
-一旦、ターミナルを閉じ、新しいターミナルを開く。以下を実行してバージョン番号(4.2.15など)が表示されることを確認する
+一旦、ターミナルを閉じ、新しいターミナルを開く。以下を実行してバージョン番号(5.1.0など)が表示されることを確認する
 
 ```
 brew --version
@@ -38,14 +38,13 @@ brew --version
 brew install gcc
 ```
 
-GCCの最新版が、gcc-13 (Cコンパイラ)、g++-13 (C++コンパイラ)という名前でインストールされる
+GCCの最新版が、gcc-15 (Cコンパイラ)、g++-15 (C++コンパイラ)という名前でインストールされる
 
 ```bash
-gcc-13 --version
+gcc-15 --version
 ```
 
 ### BLAS と LAPACK
-
 
 ```bash
 brew install openblas lapack
@@ -59,7 +58,7 @@ brew install gnuplot
 
 ## SSH の方法
 
-ceenvの場合と同様の操作でSSH接続が出来る。ceenvで用いる"LXTerminal"をmacOSのターミナルであると思って操作をすればよい。詳しくは[ECCSへのリモートアクセス](https://utphys-comp.github.io/ssh-to-eccs)を参照されたい。
+ceenvの場合と同様の操作でSSH接続が出来る。ceenvで用いる"LXTerminal"をmacOSのターミナルであると思って操作をすればよい。大学外から接続する場合は先にUTokyo VPNへ接続する。詳しくは[aiへのリモートアクセス](ssh-to-ai)を参照されたい。
 
 ## テキストエディター
 
