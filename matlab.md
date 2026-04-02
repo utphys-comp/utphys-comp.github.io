@@ -31,7 +31,7 @@
 * 「サインインして使い始める」をクリック
 * UTokyo Accountを要求されるので、入力
 * 「Create a MathWorks Account」をクリック
-* アカウント作成画面が出るので必要事項を入力。メールアドレスにはECCSクラウドメールのアドレス(xxxxx@g.ecc.u-tokyo.ac.jp)を入力
+* アカウント作成画面が出るので必要事項を入力する。利用するメールアドレスや登録方法は、その時点のUTokyo MATLAB Campus-Wide Licenseの案内に従う
 * メールアドレス確認のためのメールが届くので、「メールの確認」をクリック
 * 参考: [https://www.sodan.ecc.u-tokyo.ac.jp/faq/utokyo-matlab-cwl/](https://www.sodan.ecc.u-tokyo.ac.jp/faq/utokyo-matlab-cwl/)
 

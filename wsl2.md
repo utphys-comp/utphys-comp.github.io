@@ -1,10 +1,10 @@
 # WSL2の導入
 
-本文の目的は、Windows10 PC上にWSL2 (Windows Subsystem for Linux 2)を用いて仮想的にLinux環境を導入するまでの手順を解説することである。WSL2の導入によって Windows 10でLinux環境を実現を仮想的に実行することができる。また、VS Codeを用いることでよりスムーズな開発環境を実現することも出来る[^1]
+本文の目的は、Windows 10 PC上にWSL2 (Windows Subsystem for Linux 2) を用いてLinux環境を導入するまでの手順を解説することである。WSL2の導入によって、Windows 10上で仮想的にLinux環境を実現することができる。また、VS Codeを用いることでよりスムーズな開発環境を実現することも出来る[^1]
 
 [^1]: 本ドキュメントは主に西村俊祐氏(物理学科2020年進学)によるものである
 
-一度WSL2の環境構築をしてしまえば、Windowsで開発を行う上で必要な環境はほとんど整っていると言える。しかしながらWSL2の導入には(2020年12月現在では)やや複雑な手順を踏む必要があり、時間もそれなりにかかる。そのためパソコン操作に不慣れな場合はceenvを使う事をお勧めする[^2]
+一度WSL2の環境構築をしてしまえば、Windowsで開発を行う上で必要な環境はほとんど整っていると言える。しかしながら、環境によっては導入にやや複雑な手順を踏む必要があり、時間もそれなりにかかる。そのためパソコン操作に不慣れな場合はceenvを使う事をお勧めする[^2]
 
 [^2]: とはいえWSL 2を使いこなせるとカッコいい気もするし、やってみたいですよね
 
@@ -12,7 +12,7 @@
 
 [^3]: Windowsユーザーでない限りWSLには触れないので、検索に便りがちになる場合もあります。筆者にTwitterなどで質問して頂いても構いません
 
-追記(2024年4月 - ST): Windows 11でもWindows 10　(OSビルド 20262以降)の場合とほぼ同じ手順でWSL2がインストールできることを確認済みである。ただし、Windows 11では、手順1で `wsl --install` を実行するだけで、手順6のUbuntuのインストールまで自動的に行われるようである
+追記(2024年4月 - ST): Windows 11でもWindows 10 (OSビルド 20262以降)の場合とほぼ同じ手順でWSL2がインストールできることを確認済みである。ただし、Windows 11では、手順1で `wsl --install` を実行するだけで、手順6のUbuntuのインストールまで自動的に行われるようである
 
 ### 注意事項
 
@@ -30,7 +30,7 @@ WSL2の環境構築をする前に共有しておきたい注意事項は以下�
 
 ## WSL2とは
 
-参考: [公式ドキュメント](https://docs.microsoft.com/ja-jp/windows/wsl/)
+参考: [公式ドキュメント](https://learn.microsoft.com/ja-jp/windows/wsl/)
 
 WSL2とは、2020年にリリースされたWindows 10から直接アクセスの出来るLinux仮想環境を実現するシステムである。前身のWSL1から大幅にパフォーマンスを向上[^5]したものになっている。また、計算機実験では用いないが、Dockerという仮想環境の管理システムが使えるようになったりと、開発環境としての使いやすさが大幅に向上している[^6]
 
@@ -39,30 +39,30 @@ WSL2とは、2020年にリリースされたWindows 10から直接アクセス�
 
 ## WSL2のインストール
 
-参考: [公式ドキュメント](https://docs.microsoft.com/ja-jp/windows/wsl/install-win10)
+参考: [公式ドキュメント](https://learn.microsoft.com/ja-jp/windows/wsl/install)
 
 ### 手順 1 Windows 10のバージョンの確認
 
 Windows 10のバージョンによってインストール方法が異なるのでまずWindows 10のバージョンを確認する
 
-1. `Win`+`R`を押して「ファイル名をして実行」を開く
+1. `Win`+`R`を押して「ファイル名を指定して実行」を開く
 2. `winver`と入力する
 
-するとWindos 10のバージョンとOSビルドが表示される。WSL2のインストールには、**バージョン 1903**以上、**OSビルド 18362**以上が必要である
+するとWindows 10のバージョンとOSビルドが表示される。現在の公式ドキュメントでは、`wsl --install` を用いる方法は Windows 10 バージョン 2004 以上かつ OSビルド 19041 以上、または Windows 11 が対象である。古い環境では手動インストール手順を参照すること。
 
-#### OSビルド 20262以降の場合
+#### `wsl --install` が利用できる場合
 
-2020年12月現在ではWindows Insider Programのみで可能な操作である
+現在の Windows 10 / 11 では、管理者権限で PowerShell あるいはコマンドプロンプトを開き、`wsl --install` を実行する方法が基本である
 
 1. スタートメニューを開く
 2. "コマンドプロンプト"を検索ボックスなどで探し、右クリックして"管理者として実行"を押して開く
 3. `wsl --install`と入力し、Windows を再起動する
 
-Windows側の用意はこれだけで完了する。後は手順 5 の「Virtualization Technology の有効化」を行えばWSL 2の導入は完了し、手順6の「Linux のディストリビューションのインストール」で操作は完了する
+Windows側の用意はこれだけで完了する。初回起動時には、Linux上のユーザー名とパスワードの設定を行う。
 
-#### OSビルドが20261以下の場合
+#### 古い環境で手動インストールを行う場合
 
-以下の手順2~6が必要である
+`wsl --install` が使えない場合は、以下の手順2~6、または Microsoft の手動インストール手順を参照する。
 
 ### 手順2 WSL機能と仮想マシン機能の有効化
 
@@ -98,7 +98,7 @@ Windows側の用意はこれだけで完了する。後は手順 5 の「Virtual
 
 以上でWindows側のWSL2の準備は完了である。後はPCのハードウェア側で仮想マシン支援機能を有効化する必要がある
 
-### 手順5 Virtualizaiton Technology の有効化
+### 手順5 Virtualization Technology の有効化
 
 **注意**: この手順の操作では WindowsではなくBIOS (あるいはUEFI)というパソコンのハードウェア側のソフトウェアの設定をする。使用しているパソコンによって手順が異なるので注意されたい
 
@@ -106,13 +106,13 @@ WSL2はIntelやAMDなどが提供する仮想化マシン支援技術(Virtualiza
 
 参考:
 
-- [iSumsoft "How to Enable Virualization(Hypervisor) in BIOS/UEFI"](https://www.isumsoft.com/computer/enable-virtualization-technology-vt-x-in-bios-or-uefi.html)
+- [iSumsoft "How to Enable Virtualization(Hypervisor) in BIOS/UEFI"](https://www.isumsoft.com/computer/enable-virtualization-technology-vt-x-in-bios-or-uefi.html)
 - [Lenovo 「Virtualization Technology (VT-X)を有効にするには」](https://support.lenovo.com/ar/ja/solutions/ht500006)
 
 1. パソコンを再起動する
-2. 軌道直後の画面で`ファンクションキー`、`Enter`、`delete`キーなどを押してBIOS画面に入る
+2. 起動直後の画面で`ファンクションキー`、`Enter`、`delete`キーなどを押してBIOS画面に入る
    - デバイスによって押すべきキーは異なるので注意
-3. "Advanced", "Security", "Processor", "Virtualizaiton"などの項目の
+3. "Advanced", "Security", "Processor", "Virtualization"などの項目の
     - Intel CPUの場合
         - Intel Virtualization Technology (VT-X)
         - Intel Vt-d

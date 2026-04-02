@@ -38,10 +38,10 @@ brew --version
 brew install gcc
 ```
 
-GCCの最新版が、gcc-15 (Cコンパイラ)、g++-15 (C++コンパイラ)という名前でインストールされる
+GCCは版数付きのコマンド名 (`gcc-XX`, `g++-XX`) でインストールされることが多い。実際のコマンド名は以下で確認する
 
 ```bash
-gcc-15 --version
+brew info gcc
 ```
 
 ### BLAS と LAPACK
