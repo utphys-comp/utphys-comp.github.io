@@ -45,6 +45,8 @@ WSL2とは、2020年にリリースされたWindows 10から直接アクセス�
 
 Windows 10のバージョンによってインストール方法が異なるのでまずWindows 10のバージョンを確認する
 
+追記(2026年4月 - HT): 昨年 Windows 10 のサポートが終了し、 Windows 11 へとアップグレード済みのはずなので原則として `wsl --install` を用いればよい。また、仮に `wsl --install` が実行できなくとも、以下の手順2を行った後に `wsl.exe` の位置を特定すれば `<ファイルパス>/wsl.exe --install` によりインストールできる場合がある。
+
 1. `Win`+`R`を押して「ファイル名を指定して実行」を開く
 2. `winver`と入力する
 
@@ -230,10 +232,13 @@ sudo apt install emacs
 
 GnuplotやPythonのMatplotlibなどGUIを利用するプログラムについてはそのままでは表示することができない。以下の手順により、Windows側であらかじめX serverをインストール・実行しておく必要がある
 
+追記(2026年4月 - HT): 追記時点で、(Ubuntu24.04 LTSでは)gnuplotで `plot` を実行すると以下の手順を踏まなくとも別 window が開いて描画された。ほかにも多くのGUIアプリケーションがこうした出力に対応しているらしい。またこれでうまくいかずX serverなどを試す場合、Ubuntu20.04までとUbuntu22.04以降で勝手がかなり異なるようなので気を付けられたし。
+
 参考:
 
 - [WSL2の導入とGUI環境の構築とsshfsしたものもgnome-openしたい!! [Ubuntu18.04/20.04]](https://qiita.com/momomo_rimoto/items/51d533ae9529872696ce)
 - [WSL2におけるVcXsrvの設定](https://qiita.com/ryoi084/items/0dff11134592d0bb895c)
+- [「WSLg」を使ってWindows上でLinuxのGUIアプリを動かしてみよう](https://thinkit.co.jp/article/37792)
 
 #### Windows側の準備
 
